@@ -48,6 +48,7 @@ Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widen
 
 0. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
 1. We recommend to use multi-GPU when training additive PyramidNet with alpha=90 or multiplicative PyramidNet with alpha=3.  Otherwise you may get "out of memory" error.
+2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
 ## Contact
 Dongyoon Han (dyhan@kaist.ac.kr),
