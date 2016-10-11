@@ -1,5 +1,5 @@
 # PyramidNet
-This repository contains the code for the paper "Deep Pyramidal Residual Networks". 
+This repository contains the code for the paper "Deep Pyramidal Residual Networks" (https://arxiv.org/abs/1610.02915). 
 
 
 The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch).
