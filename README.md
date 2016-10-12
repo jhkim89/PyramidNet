@@ -35,14 +35,14 @@ th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 
 
 Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widening factor; "add" and "mul" denote the results obtained with additive and multiplicative pyramidal networks, respectively.
 
-| Network                           | # of parameters |  CIFAR-10   |  CIFAR-100  |
-| --------------------------------- | --------------- | ----------- | ----------- |
-| PyramidNet-110 (mul), alpha=1.68  | 1.7M            | 4.62        | 23.16       |
-| PyramidNet-110 (add), alpha=16    | 1.7M            | 4.62        | 23.31       |
-| PyramidNet-110 (mul), alpha=2     | 3.8M            | 4.50        | 20.94       |
-| PyramidNet-110 (add), alpha=28    | 3.8M            | 4.27        | 20.21       |
-| PyramidNet-110 (mul), alpha=3     | 28.3M           | 4.06        | 18.79       |
-| PyramidNet-110 (add), alpha=90    | 28.3M           | **3.77**    | **18.29**   |
+| Network                           | # of parameters | # of output dimension | CIFAR-10    |  CIFAR-100  |
+| --------------------------------- | --------------- | --------------------- | ----------- | ----------- |
+| PyramidNet-110 (mul), alpha=1.68  | 1.7M            |  76                   | 4.62        | 23.16       |
+| PyramidNet-110 (add), alpha=16    | 1.7M            |  **64**               | 4.62        | 23.31       |
+| PyramidNet-110 (mul), alpha=2     | 3.8M            |  128                  | 4.50        | 20.94       |
+| PyramidNet-110 (add), alpha=28    | 3.8M            |  **100**              | 4.27        | 20.21       |
+| PyramidNet-110 (mul), alpha=3     | 28.3M           |  432                  | 4.06        | 18.79       |
+| PyramidNet-110 (add), alpha=90    | 28.3M           |  **286**              | **3.77**    | **18.29**   |
 
 ##Notes
 
