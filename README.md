@@ -33,6 +33,8 @@ th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 
 
 ##Results
 
+1. CIFAR
+
 Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widening factor; "add" and "mul" denote the results obtained with additive and multiplicative pyramidal networks, respectively.
 
 | Network                           | # of parameters | Output feat. dimension | CIFAR-10    |  CIFAR-100  |
@@ -43,6 +45,16 @@ Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widen
 | PyramidNet-110 (add), alpha=28    | 3.8M            |  **100**               | 4.27        | 20.21       |
 | PyramidNet-110 (mul), alpha=3     | 28.3M           |  432                   | 4.06        | 18.79       |
 | PyramidNet-110 (add), alpha=90    | 28.3M           |  **286**               | **3.77**    | **18.29**   |
+
+2. ImageNet
+
+Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet dataset.  We use the additive PyramidNet for our results. 
+
+| Network                                   | # of parameters | Output feat. dimension | Top-1 error | Top-5 error |
+| ----------------------------------------- | --------------- | ---------------------- | ----------- | ----------- |
+| PreResNet-200                             | 64.5M           |  2048                  | 21.66       | 5.79        |
+| PyramidNet-200, alpha=300                 | 62.1M           |  1456                  | 20.47       | 5.29        |
+| PyramidNet-200, alpha=450, Dropout (0.5)  | 116.4M          |  2056                  | 20.11       | 5.43        |
 
 ##Notes
 
