@@ -25,7 +25,7 @@ local SBatchNorm = nn.SpatialBatchNormalization
 local function createModel(opt)
    local depth = opt.depth
    local iChannels
-   local alpha = 16
+   local alpha = 48
 -- local alpha = 300
    local function round(x)
       return math.floor(x+0.5)
@@ -160,7 +160,7 @@ local function createModel(opt)
    iChannels = 16
    local startChannel = 16
    local Channeltemp = 16
-   addChannel = alpha/n
+   addChannel = alpha/(3*n)
    print(' | PyramidNet-' .. depth .. ' CIFAR')
 
    model:add(Convolution(3,16,3,3,1,1,1,1))
