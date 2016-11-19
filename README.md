@@ -39,12 +39,12 @@ Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widen
 
 | Network                           | # of parameters | Output feat. dimension | CIFAR-10    |  CIFAR-100  |
 | --------------------------------- | --------------- | ---------------------- | ----------- | ----------- |
-| PyramidNet-110 (mul), alpha=1.68  | 1.7M            |  76                    | 4.62        | 23.16       |
-| PyramidNet-110 (add), alpha=16    | 1.7M            |  **64**                | 4.62        | 23.31       |
-| PyramidNet-110 (mul), alpha=2     | 3.8M            |  128                   | 4.50        | 20.94       |
-| PyramidNet-110 (add), alpha=28    | 3.8M            |  **100**               | 4.27        | 20.21       |
-| PyramidNet-110 (mul), alpha=3     | 28.3M           |  432                   | 4.06        | 18.79       |
-| PyramidNet-110 (add), alpha=90    | 28.3M           |  **286**               | **3.77**    | **18.29**   |
+| PyramidNet-110 (mul), alpha=4.75  | 1.7M            |  76                    | 4.62        | 23.16       |
+| PyramidNet-110 (add), alpha=48    | 1.7M            |  **64**                | 4.62        | 23.31       |
+| PyramidNet-110 (mul), alpha=8     | 3.8M            |  128                   | 4.50        | 20.94       |
+| PyramidNet-110 (add), alpha=84    | 3.8M            |  **100**               | 4.27        | 20.21       |
+| PyramidNet-110 (mul), alpha=27    | 28.3M           |  432                   | 4.06        | 18.79       |
+| PyramidNet-110 (add), alpha=270   | 28.3M           |  **286**               | **3.77**    | **18.29**   |
 
 ####ImageNet
 
@@ -59,10 +59,10 @@ Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet d
 ##Notes
 
 0. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
-1. We recommend to use multi-GPU when training additive PyramidNet with alpha=90 or multiplicative PyramidNet with alpha=3.  Otherwise you may get "out of memory" error.
+1. We recommend to use multi-GPU when training additive PyramidNet with alpha=270 or multiplicative PyramidNet with alpha=27.  Otherwise you may get "out of memory" error.
 2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
 ## Contact
-Dongyoon Han (dyhan@kaist.ac.kr),
 Jiwhan Kim (jhkim89@kaist.ac.kr),
+Dongyoon Han (dyhan@kaist.ac.kr),
 Junmo Kim (junmo.kim@kaist.ac.kr)
