@@ -22,11 +22,11 @@ Figure 2: Visual illustrations of (a) additive PyramidNet, (b) multiplicative Py
 2. Change the learning rate schedule in the file train.lua: "decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0" to "decay = epoch >= 225 and 2 or epoch >= 150 and 1 or 0".
 3. Train our PyramidNet, by running main.lua as below:
 
-To train additive PyramidNet-110 (alpha=16) on CIFAR-10 dataset:
+To train additive PyramidNet-110 (alpha=48) on CIFAR-10 dataset:
 ```bash
 th main.lua -dataset cifar10 -depth 110 -nEpochs 300 -LR 0.5 -netType addpyramidnet -batchSize 128 -shareGradInput true
 ```
-To train multiplicative PyramidNet-110 (alpha=1.68) with 4 GPUs on CIFAR-100 dataset:
+To train multiplicative PyramidNet-110 (alpha=4.75) with 4 GPUs on CIFAR-100 dataset:
 ```bash
 th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 8 -netType mulpyramidnet -batchSize 128 -shareGradInput true
 ```
