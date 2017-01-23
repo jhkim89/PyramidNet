@@ -56,6 +56,9 @@ Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet d
 | PyramidNet-200, alpha=300                 | 62.1M           |  1456                  | 20.47       | 5.29        |
 | PyramidNet-200, alpha=450, Dropout (0.5)  | 116.4M          |  2056                  | 20.11       | 5.43        |
 
+Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
+
+
 ##Notes
 
 0. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
