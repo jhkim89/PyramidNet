@@ -67,7 +67,7 @@ Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 
 ##Updates
 
-02/23/2017:
+01/23/2017:
 
 0. Added Imagenet pretrained models.
 
