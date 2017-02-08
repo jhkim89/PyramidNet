@@ -65,6 +65,12 @@ Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 1. We recommend to use multi-GPU when training additive PyramidNet with alpha=270 or multiplicative PyramidNet with alpha=27.  Otherwise you may get "out of memory" error.
 2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
+##Updates
+
+02/23/2017:
+
+0. Added Imagenet pretrained models.
+
 ## Contact
 Jiwhan Kim (jhkim89@kaist.ac.kr),
 Dongyoon Han (dyhan@kaist.ac.kr),
