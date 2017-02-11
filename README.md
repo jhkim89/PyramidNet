@@ -46,6 +46,14 @@ Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widen
 | PyramidNet-110 (mul), alpha=27    | 28.3M           |  432                   | 4.06        | 18.79       |
 | PyramidNet-110 (add), alpha=270   | 28.3M           |  **286**               | **3.77**    | **18.29**   |
 
+Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 and CIFAR-100 datasets.  We use the additive pyramidal networks.
+
+| Network                           | # of parameters | Output feat. dimension | CIFAR-10    |  CIFAR-100  |
+| --------------------------------- | --------------- | ---------------------- | ----------- | ----------- |
+| PyramidNet-110 (add), alpha=48    | 1.7M            |  256                   | 4.21        | 19.52       |
+| PyramidNet-110 (mul), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
+| PyramidNet-110 (add), alpha=270   | 28.3M           |  1144                  | **3.48**    | **17.10**   |
+
 ####ImageNet
 
 Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet dataset.  We use the additive PyramidNet for our results. 
@@ -66,6 +74,10 @@ Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
 ##Updates
+
+02/12/2017:
+
+0. Results of the bottleneck architecture on CIFAR datasets are updated.
 
 01/23/2017:
 
