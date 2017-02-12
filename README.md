@@ -51,7 +51,7 @@ Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 
 | Network                           | # of parameters | Output feat. dimension | CIFAR-10    |  CIFAR-100  |
 | --------------------------------- | --------------- | ---------------------- | ----------- | ----------- |
 | PyramidNet-110 (add), alpha=48    | 1.7M            |  256                   | 4.21        | 19.52       |
-| PyramidNet-110 (mul), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
+| PyramidNet-110 (add), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
 | PyramidNet-110 (add), alpha=270   | 28.3M           |  1144                  | **3.48**    | **17.10**   |
 
 ####ImageNet
