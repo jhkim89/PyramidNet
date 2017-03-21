@@ -35,9 +35,9 @@ To train multiplicative PyramidNet-110 (alpha=4.75) with 4 GPUs on CIFAR-100 dat
 th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 8 -netType mulpyramidnet -batchSize 128 -shareGradInput true
 ```
 
-##Results
+## Results
 
-####CIFAR
+#### CIFAR
 
 Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widening factor; "add" and "mul" denote the results obtained with additive and multiplicative pyramidal networks, respectively.
 
@@ -58,7 +58,7 @@ Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 
 | PyramidNet-110 (add), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
 | PyramidNet-110 (add), alpha=270   | 28.3M           |  1144                  | **3.48**    | **17.10**   |
 
-####ImageNet
+#### ImageNet
 
 Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet dataset.  We use the additive PyramidNet for our results. 
 
@@ -71,13 +71,13 @@ Top-1 and Top-5 error rates of single-model, single-crop (224*224) on ImageNet d
 Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 
 
-##Notes
+## Notes
 
 0. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
 1. We recommend to use multi-GPU when training additive PyramidNet with alpha=270 or multiplicative PyramidNet with alpha=27.  Otherwise you may get "out of memory" error.
 2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
-##Updates
+## Updates
 
 02/12/2017:
 
