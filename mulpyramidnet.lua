@@ -197,9 +197,9 @@ local function createModel(opt)
       model:add(nn.Linear(iChannels, 10))
    elseif opt.dataset == 'cifar100' then
       model:add(nn.Linear(iChannels, 100))
+   end
    else
       error('invalid dataset: ' .. opt.dataset)
-   end
    end
 		
    local function ConvInit(name)
