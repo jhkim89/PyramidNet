@@ -200,7 +200,8 @@ local function createModel(opt)
    else
       error('invalid dataset: ' .. opt.dataset)
    end
-
+   end
+		
    local function ConvInit(name)
       for k,v in pairs(model:findModules(name)) do
          local n = v.kW*v.kH*v.nOutputPlane
