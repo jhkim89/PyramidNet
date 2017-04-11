@@ -28,11 +28,11 @@ Figure 2: Visual illustrations of (a) additive PyramidNet, (b) multiplicative Py
 
 To train additive PyramidNet-110 (alpha=48) on CIFAR-10 dataset:
 ```bash
-th main.lua -dataset cifar10 -depth 110 -nEpochs 300 -LR 0.5 -netType addpyramidnet -batchSize 128 -shareGradInput true
+th main.lua -dataset cifar10 -depth 110 -nEpochs 300 -LR 0.1 -netType addpyramidnet -batchSize 128 -optnet true
 ```
 To train multiplicative PyramidNet-110 (alpha=4.75) with 4 GPUs on CIFAR-100 dataset:
 ```bash
-th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 8 -netType mulpyramidnet -batchSize 128 -shareGradInput true
+th main.lua -dataset cifar100 -depth 110 -nEpochs 300 -LR 0.5 -nGPU 4 -nThreads 8 -netType mulpyramidnet -batchSize 128 -optnet true
 ```
 
 ## Results
@@ -48,7 +48,7 @@ Top-1 error rates on CIFAR-10 and CIFAR-100 datasets.  "alpha" denotes the widen
 | PyramidNet-110 (mul), alpha=8     | 3.8M            |  128                   | 4.50        | 20.94       |
 | PyramidNet-110 (add), alpha=84    | 3.8M            |  **100**               | 4.27        | 20.21       |
 | PyramidNet-110 (mul), alpha=27    | 28.3M           |  432                   | 4.06        | 18.79       |
-| PyramidNet-110 (add), alpha=270   | 28.3M           |  **286**               | **3.77**    | **18.29**   |
+| PyramidNet-110 (add), alpha=270   | 28.3M           |  **286**               | **3.73**    | **18.25**   |
 
 Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 and CIFAR-100 datasets.  We use the additive pyramidal networks.
 
@@ -56,7 +56,7 @@ Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 
 | --------------------------------- | --------------- | ---------------------- | ----------- | ----------- |
 | PyramidNet-110 (add), alpha=48    | 1.7M            |  256                   | 4.21        | 19.52       |
 | PyramidNet-110 (add), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
-| PyramidNet-110 (add), alpha=270   | 28.3M           |  1144                  | **3.48**    | **17.10**   |
+| PyramidNet-110 (add), alpha=270   | 28.3M           |  1144                  | **3.48**    | **17.01**   |
 
 #### ImageNet
 
