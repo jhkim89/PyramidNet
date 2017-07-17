@@ -83,6 +83,10 @@ Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 
 ## Updates
 
+07/17/2017:
+
+1. Caffe implementation of PyramidNet is released.
+
 02/12/2017:
 
 1. Results of the bottleneck architecture on CIFAR datasets are updated.
