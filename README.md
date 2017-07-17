@@ -63,6 +63,7 @@ Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 
 | PyramidNet-272 (add), alpha=200   | 26.0M           |  864                   | **3.31**    | **16.35**   |
 
 ![cifar](https://user-images.githubusercontent.com/22743125/28292795-c058f7dc-6b8b-11e7-9d3a-280ed49a4191.png)
+
 Figure 3: Performance distribution according to number of parameters on CIFAR-10 (left) and CIFAR-100 (right).
 
 #### ImageNet
