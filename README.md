@@ -57,6 +57,9 @@ Top-1 error rates of our model with the **bottleneck architecture** on CIFAR-10 
 | PyramidNet-164 (add), alpha=48    | 1.7M            |  256                   | 4.21        | 19.52       |
 | PyramidNet-164 (add), alpha=84    | 3.8M            |  400                   | 3.96        | 18.32       |
 | PyramidNet-164 (add), alpha=270   | 27.0M           |  1144                  | **3.48**    | **17.01**   |
+| PyramidNet-200 (add), alpha=240   | 26.6M           |  1024                  | **3.44**    | **16.51**   |
+| PyramidNet-236 (add), alpha=220   | 26.8M           |  944                   | **3.40**    | **16.37**   |
+| PyramidNet-272 (add), alpha=200   | 26.0M           |  864                   | **3.31**    | **16.35**   |
 
 #### ImageNet
 
@@ -73,19 +76,19 @@ Model files download: [link](https://1drv.ms/f/s!AmNvwgeB0n4GsiDFDNJWZkEbajJf)
 
 ## Notes
 
-0. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
-1. We recommend to use multi-GPU when training additive PyramidNet with alpha=270 or multiplicative PyramidNet with alpha=27.  Otherwise you may get "out of memory" error.
-2. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
+1. The parameter "alpha" can only be changed in the files addpyramidnet.lua and mulpyramidnet.lua (Line 28).
+2. We recommend to use multi-GPU when training additive PyramidNet with alpha=270 or multiplicative PyramidNet with alpha=27.  Otherwise you may get "out of memory" error.
+3. We are currently testing our code in the ImageNet dataset.  We will upload the result when the training is completed.
 
 ## Updates
 
 02/12/2017:
 
-0. Results of the bottleneck architecture on CIFAR datasets are updated.
+1. Results of the bottleneck architecture on CIFAR datasets are updated.
 
 01/23/2017:
 
-0. Added Imagenet pretrained models.
+1. Added Imagenet pretrained models.
 
 ## Contact
 Jiwhan Kim (jhkim89@kaist.ac.kr),
