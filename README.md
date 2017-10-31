@@ -7,7 +7,8 @@ Arxiv: https://arxiv.org/abs/1610.02915.
 
 The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch).
 
-### Please refer to this [site](https://github.com/jhkim89/PyramidNet-caffe) for Caffe implementation of PyramidNet.
+### Caffe implementation of PyramidNet: [site](https://github.com/jhkim89/PyramidNet-caffe)
+### PyTorch implementation of PyramidNet: [site](https://github.com/dyhan0920/PyramidNet-PyTorch)
 
 ## Abstract
  Deep convolutional neural networks (DCNNs) have shown remarkable performance in image classification tasks in recent years. Generally, deep neural network architectures are stacks consisting of a large number of convolution layers, and they perform downsampling along the spatial dimension via pooling to reduce memory usage. At the same time, the feature map dimension (i.e., the number of channels) is sharply increased at downsampling locations, which is essential to ensure effective performance because it increases the capability of high-level attributes. Moreover, this also applies to residual networks and is very closely related to their performance. In this research, instead of using downsampling to achieve a sharp increase at each residual unit, we gradually increase the feature map dimension at all the units to involve as many locations as possible. This is discussed in depth together with our new insights as it has proven to be an effective design to improve the generalization ability. Furthermore, we propose a novel residual unit capable of further improving the classification accuracy with our new network architecture. Experiments on benchmark CIFAR datasets have shown that our network architecture has a superior generalization ability compared to the original residual networks.
